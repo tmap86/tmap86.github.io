@@ -1,0 +1,41 @@
+body{ background-image: url(imagenes/ai1250.jpg); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-size: cover; 
+    background-color: black;
+}
+
+h1 {color:aqua; font-family: 'fenrise';}
+p.textoinicio {color:rgb(255, 255, 255); font-family:'arial';}
+p.textoinicio2 {color:rgb(255, 255, 255); font-family:'arial'; font-size: 10px;}
+.botonentrar
+{   color: aqua;
+    /*boton de entrar*/
+    text-decoration:none;
+    font-family:'fenrise' ;
+    font-weight: 400;
+    font-size: 15px;
+    color:aqua;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:20px;
+    padding-right:20px;
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: aqua;
+    border-bottom-left-radius: 10px ;
+    border-right-width: 5px; 
+    /*para centrar*/
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);   
+    
+}
+
+
+    
