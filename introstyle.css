@@ -61,7 +61,7 @@
     background: rgb(255, 255, 255);
   }
 
-  h1{font-family: fenrise; color: aqua; font-size: medium; padding-top: 20px; padding-left: 10px;}
+  h1{font-family: Fenrise; color: aqua; font-size: medium; padding-top: 20px; padding-left: 10px;}
   .searchbox{margin-left: 70%; margin-top: -30px; }
   input.searchtext{ background-color: rgb(134, 218, 218); border: solid white 1px; border-radius: 3px;}
   .botonbuscar{ background-color: transparent; border-color: aqua; color: aqua; transition-duration: 0.4s; text-decoration: none; border-radius: 4px; }
@@ -72,13 +72,13 @@
   .sidebar a{display: block; }
   .contenido{padding-top: 200px; margin-left: 209px; display: inline-grid; grid-template-columns: auto auto auto; }
   .contenido1{padding-top: 200px; margin-left: 200px; display: inline-grid; grid-template-columns: auto auto auto;}
-  .sidetext{color: aqua; font-family: fenrise; text-decoration: none; padding: 10px; font-size: small; transition-duration: 0.3s;}
+  .sidetext{color: aqua; font-family: Fenrise; text-decoration: none; padding: 10px; font-size: small; transition-duration: 0.3s;}
   .sidetext:hover{ color: white;}
-  .techos{ font-family: fenrise; color: white; font-size: 11px; margin-top: 350px; margin-left: 20px; border: solid 2px aqua; padding: 1px; border-radius: 4px; text-align: center; margin-right: 15px;}
-  .dmodeling{ color: white; font-family: fenrise; margin-left: 100px;  }
+  .techos{ font-family: Fenrise; color: white; font-size: 11px; margin-top: 350px; margin-left: 20px; border: solid 2px aqua; padding: 1px; border-radius: 4px; text-align: center; margin-right: 15px;}
+  .dmodeling{ color: white; font-family: Fenrise; margin-left: 100px;  }
   .blender{  margin-top: 100px; margin-left: -300px; border: solid aqua; border-width: 1px 0px 1px 1px; padding: 5px; box-shadow: -4px 0 0 1px aqua; border-radius: 3px;}
   img{width: 90%; height: auto; display: inline-block; margin:auto;  padding: 5px;  border: solid white; border-width: 0 1px 1px 0;  }
-  .parame{color: white; font-family: fenrise; margin-left: 130px;}
+  .parame{color: white; font-family: Fenrise; margin-left: 130px;}
   .afusion{  margin-top: 100px; margin-left: -520px; margin-right: auto;  border: solid aqua; border-width: 1px 0px 1px 1px; padding: 5px; box-shadow: -4px 0 0 1px aqua; border-radius: 3px; display: flexbox; justify-content: center; align-items: center; }
   .services{ color: white; font-family: Arial, Helvetica, sans-serif; }
   .video{color: aqua; font-family: Arial, Helvetica, sans-serif;}
