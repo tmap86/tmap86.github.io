@@ -65,15 +65,39 @@
   .botonbuscar:hover{ color: white; border-color: white;}
   .sesion{margin-left: 45%; margin-top: 10px; background-color: transparent; color: aqua; border-radius: 4px; border-color: aqua;}
   .sesion:hover{color: white;}
-  .sidebar{width: 200px; border: solid 1px aqua; border-radius: 7px; position: fixed; margin-top: 150px; height: 700px; box-shadow: 4px 4px aqua;}
+  .sidebar{ border: solid 1px aqua; border-radius: 7px; position: fixed; margin-top: 150px; height: 700px; box-shadow: 4px 4px aqua; -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);  max-width: 25vw; width: 15em;}
   .sidebar a{display: block; }
-  .contenido{padding-top: 200px; padding-left: 209px; display: inline-block; grid-template-columns: auto auto auto;}
-  .sidetext{color: aqua; font-family: 'fenrise'; text-decoration: none; padding: 10px; font-size: small; transition-duration: 0.3s;}
+  .contenido{padding-top: 200px; margin-left: 259px; display: inline-grid;  font-size: 1vw; }
+  .contenido1{padding-top: 200px; margin-left: 200px; display: inline-grid; grid-template-columns: auto auto auto;}
+  .sidetext{color: aqua; font-family: 'fenrise'; text-decoration: none; padding: 1rem; font-size: 0.8vw; transition-duration: 0.3s;  max-height: fit-content; width: fit-content; height: 1rem; }
   .sidetext:hover{ color: white;}
-  .techos{ font-family: fenrise; color: white; font-size: 11px; margin-top: 350px; margin-left: 20px; border: solid 2px aqua; padding: 1px; border-radius: 4px; text-align: center; margin-right: 15px;}
+  .techos{ font-family: fenrise; color: white; font-size: 0.7vw; width: fit-content; margin-top: 230px; margin-left: 20px; border: solid 2px aqua; padding: 1px; border-radius: 4px; text-align: center; margin-right: 15px;}
   .workspic{ width: 300px; box-shadow: 2px 2px aqua; border: solid white 1px;}
   .gamepc{ width: 300px; box-shadow: 2px 2px aqua; border: solid white 1px;}
   .custopc{width: 300px; box-shadow: 2px 2px aqua; border: solid white 1px;}
   .servpic{width: 300px; box-shadow: 2px 2px aqua; border: solid white 1px;}
-  .product{font-family: 'fenrise'; color: white; text-decoration-line: underline; text-decoration-color: aqua;}
+  .product{font-family: 'fenrise'; color: white; text-decoration-line: underline; text-decoration-color: aqua; margin-left: 50px;}
   .workstation{ color: white; font-family: Arial, Helvetica, sans-serif;}
+  .contenido img{ height: auto; width: 15vw; margin-left: 50px; }
+
+  .image-container {
+    position: relative; width: fit-content; max-height: fit-content;
+  }
+  
+  .hologram {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 290px;
+    height: 180px;
+    background-image: url('https://media.giphy.com/media/SVH9y2LQUVVCRcqD7o/giphy.gif');
+    background-size:cover;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .image-container:hover .hologram {
+    opacity: 1;
+  }
+  
+  
