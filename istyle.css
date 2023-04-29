@@ -1,0 +1,187 @@
+/* The sidebar menu */
+
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body{ background-color:#111;}
+
+/* Estilos para la barra de desplazamiento en Google Chrome */
+::-webkit-scrollbar { 
+  width: 5px; /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: aqua; /* Color de fondo del "pulgador" de la barra */
+}
+
+
+header{position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+  z-index: 1; box-shadow: 0 0 10px 0 aqua;}
+
+.logo{ width: 300px; height: auto; margin-top: 20px; margin-left:auto; margin-right: auto; display: block; }
+ 
+
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: transparent; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+   
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: aqua;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Orbitron', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: white;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar en el header */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: aqua;
+    padding: 10px 15px;
+    border: none;
+    
+   
+  }
+  
+  .openbtn:hover {
+    background-color: #444; color: white;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  /*iconos en el header*/
+  .ichead{display:flex; border: aqua solid 0px; width: 100%; justify-content: space-between; margin-top: -1vh;}
+  .buscar{ background-color: transparent; border-width: 0px; color: aqua; font-size: 20px; 
+    cursor: pointer; padding: 10px 15px;   }
+  .buscar:hover{ color: white; background-color: #444; }
+  .usuario{ font-size: 20px; background-color: transparent; color: aqua; border-width: 0; 
+    cursor: pointer; padding: 10px 15px;  }
+  .usuario:hover{ color: white; background-color: #444;}
+  .cart{background-color: transparent; border-width: 0px; color: aqua; font-size: 20px; 
+    cursor: pointer; padding: 10px 15px; }
+.cart:hover{color: white; background-color: #444;}
+
+/*slogan*/
+.slogan{font-family: 'Orbitron', sans-serif; color: white;
+    src: url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+   font-size: 10px; display: flex; justify-content: center; 
+}
+/*slide de imagenes*/
+.boxslide{ display: flex; justify-content: center; align-items: center; height: 50vh;}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #000;
+  border: 0px solid #fff;
+  box-shadow: 1px 1px 5px aqua;
+  max-height: 90%;
+  max-width: 90%;
+  border-radius: 10px;
+}
+
+.slide > img {
+  width: 100%;
+  height: 100%;
+  
+  position: absolute;
+  animation: slide 30s infinite;
+  opacity: 0;
+  object-fit: cover;
+}
+
+.slide > img:nth-child(2) {
+  animation-delay: 5s;
+}
+.slide > img:nth-child(3) {
+  animation-delay: 10s;
+}
+.slide > img:nth-child(4) {
+  animation-delay: 15s;
+}
+.slide > img:nth-child(5) {
+  animation-delay: 20s;
+}
+.slide > img:nth-child(6) {
+  animation-delay: 25s;
+}
+.slide > img:nth-child(7) {
+  animation-delay: 30s;}
+
+.slide > img:nth-child(8) {
+    animation-delay: 35s;}
+
+@keyframes slide {
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    transform: scale(1.2);
+  }
+}
+
+.contenido{ margin-top: 15vh;}
+.sintesis{ font-family: Arial, Helvetica, sans-serif; color: white;  }
+.misionvi{ color: aqua; font-family: Arial, Helvetica, sans-serif;  }
+
+/* contenedor padre*/.introfrase{  text-align: center; }
+.blendercontainer{  align-items: center; }
+/*imagenesblender*/.blender{width: 70vw; height:auto; border: white solid; border-width: 0 1px 1px 0; margin-top: 10px; }
+/*contenedor de mision y vision*/
+.misionvicontainer{  border-width: 1px; box-shadow: aqua 1px 1px 5px; padding: 10px; width: 80%; margin: auto; border-radius: 10px; }
+.parrafofinal{ width: 80%; margin: auto;}

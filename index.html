@@ -2,15 +2,15 @@
 <html>
   <head>
     <meta charset="UTF-8">
-   <link rel="stylesheet" href="/fonts/ROBOTECH-GP.woff">
-    
+   
     <title>Technica</title>
     <style>
       /* Estilo para el fondo negro */
+      @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
       body {
         background-color: #000;
         color: aqua;
-        font-family: 'Robotech-gp'; 
+        font-family: 'Orbitron'; 
         font-size: 24px;
         text-align: center;
         margin: 0;
@@ -25,30 +25,32 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
+        
       }
 
       /* Estilo para el texto principal */
-      h1 {
-        letter-spacing: 3px;
-        font-size: 4em;
-        margin: 0;
-        padding: 0;
-        opacity: 0;
+      .logo {
+        width: 90%;
+        height: auto;
+        
         animation: fadeIn 2.5s ease-in-out forwards;
       }
 
       /* Estilo para el subtexto */
       h2 {
-        font-size: 2em;
+
+        
         margin: 0;
         padding: 0;
         margin-top: 0.5em;
          -webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-          font-size: 20px;
+          font-size: 18px;
       }
 
       /* Animación de desvanecimiento */
+      
+
       @keyframes fadeIn {
         0% {
           opacity: 0; color: white;
@@ -90,16 +92,17 @@
 
     </style>
   </head>
-  <link rel="stylesheet" href="fonts/ROBOTECH GP.ttf">
+  
   <body>
     <header>
-      <h1 id="main-heading">Technica</h1>
-      <h2 id="subheading">by Theo Abdalah</h2>
+      <img class="logo" src="imgs/technicaletras.png" alt="technica">
+      <h2 id="subheading">by </h2>
+      <h2 id="subheading"> Theo Abdalah</h2>
     </header>
 
     <!-- Agrega aquí el código para la transición a otra página -->
     <script>
-      var mainHeading = document.getElementById("main-heading");
+      var mainHeading = document.getElementById("logo");
       var mainHeading = document.getElementById("subheading");
 
       setTimeout(function() {

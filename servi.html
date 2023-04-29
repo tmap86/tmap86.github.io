@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Technica</title>
+	<script src="ijs.js"></script>
+    <link rel="stylesheet" href="servistyle.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="serviscript.js"></script>
+</head>
+<body>
+	<header>
+		
+    <img class="logo" src="imgs/technicaletras.png">
+      <div class="ichead">
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+      <div>
+      <button class="buscar"><i class="fa fa-search"></i></button>
+      <button class="usuario"><i class="fa fa-user"></i></button>
+      <button class="cart"><i class="fa fa-shopping-cart"></i></button>
+      </div>
+      </div>
+
+
+    
+		
+</header>
+	
+  <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="intro.html">Home</a>
+        <a href="#">About</a>
+        <a href="servi.html">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+        <a href="rendegal.html">Render Gallery</a>
+        <a href="#">Store</a>
+        <a href="#">Blog</a>
+      </div>
+      
+      
+	<!-- Contenido de la página -->
+  <div class="contenido">
+    <div class="serviciotitle">
+        <h1> Services</h1>        
+        </div>
+            <!--parte de la vision y la mision--></div>
+            <!-- modal a ver si funciona-->
+        <div id="modal">
+          <span class="cerrar" onclick="cerrarModal()">&times;</span>
+          <img id="imagen-ampliada" src="">
+        </div>
+        <div class="servicescontainer">
+        <p class="tituservicios">3D modeling</p>
+        <p class="servidescript">We offer 3D modeling and animation services using Blender, allowing us to create lifelike 3D 
+        models and captivating animations for a wide range of applications, from product design to promotional videos.</p>
+        <p class="tituservicios"> Design</p>
+        <p class="servidescript">Our skilled designers specialize in creating visually appealing designs that grab your 
+            audience's attention and convey your message effectively. We use a variety of design software, including Adobe 
+            Photoshop and Illustrator, to create stunning graphics and illustrations. Our video production services are also 
+            available, with skilled use of Adobe Premiere for high-quality content creation. Our designs are tailored to your 
+            specific needs and goals, helping you stand out in today's competitive market.</p>
+            <p class="tituservicios">Computers and IT solutions</p>
+            <p class="servidescript">We provide comprehensive computer and IT solutions for homes, offices, and businesses. 
+              Our team of experts can help you choose the right equipment that fits your needs and budget. We also offer 
+              computer sales and repair services, and our technicians are available to provide reliable technical support 
+              whenever you need it. Whether it's setting up a new computer, troubleshooting software issues, or upgrading 
+              hardware, we're here to help. Let us take care of your technology needs so you can focus on growing your business.</p>
+              </div>
+        <div id="fondo-modal"></div>
+</body>
+</html>
